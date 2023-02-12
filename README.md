@@ -16,3 +16,7 @@ In summary, Buildify is an easy-to-use website builder that allows users to easi
 <p>
     This project was completed for CSCI 311 Web Programming
 </p>
+
+<br/>
+
+<h3>See <a href="https://github.com/charlijj/sitecraft.ca/blob/main/Proposal.pdf">Proposal.pdf</a> for more detail</a>

@@ -20,7 +20,7 @@ function navBarChange () {
     setTimeout(() => {
         
         nav.style.opacity = `1`; 
-        nav.style.height = `55px`;
+        nav.style.height = '45px';
         nav.style.marginBottom = '40px';     
 
     }, 500);

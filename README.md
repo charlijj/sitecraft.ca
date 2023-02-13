@@ -3,7 +3,8 @@
 
 <br/>
 
-<h2>Link to website: <a href="https://charlijj.github.io/sitecraft.ca/">sitecraft.ca</a></h3>
+<h3 align="center">Link to website: <a href="https://charlijj.github.io/sitecraft.ca/">sitecraft.ca</a></h3>
+<br/>
 
 <h2>Project Description:</h2>
 <br/>

@@ -1,8 +1,6 @@
 <h1 align="center">sitecraft.ca</h1>
 <h3 align="center">(In Progress)</h3>
 
-<br/>
-
 <h3 align="center">Link to website: <a href="https://charlijj.github.io/sitecraft.ca/">sitecraft.ca</a></h3>
 <br/>
 

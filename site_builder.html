@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
 
-        <!-- Basic Page Needs
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta charset="utf-8">
-        <title>CSCI 311 - Lab 2</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-      
-        <!-- Mobile Specific Metas
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-        <!-- FONT
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-      
-        <!-- CSS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/site_builder_style.css">
-      
-        <!-- Favicon
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
-      
-      </head>
-<body>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>CSCI 311 - Lab 2</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/site_builder_style.css">
+    
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+</head>
+<body onscroll="navBarChange()">
 
-    <a id="top"></a>
+    <!-- Top of page marker -->
+    <div id="top"></div> 
 
     <!-- Nav Bar
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="navbar">
+    <div class="navbar" id="navBar">
 
-        <a href="index.html" class="navbarItem">
+        <a href="index.html" class="navbarLinks">
             <span>Home</span>
         </a>
 
-        <a href="#top" class="navbarItem">
+        <a href="#top" class="navbarLinks">
             <span>Site Builder</span>
         </a>
 
-        <a href="#top" class="navbarItem" style="border-right: 0;">
-            <span>About</span> 
+        <a href="#top" class="navbarLinks" style="border-right: 0;">
+            <span>Account (sign in)</span> 
         </a>
     </div>
 
@@ -65,6 +66,8 @@
     <footer>
         Jasper Charlinski, Sebastien Van Den Bremt, Naman Batra Febuary 10th, 2023 &copy;
     </footer>
+
+    <script src="script/nav_bar_script.js"></script>
 
 </body>
 </html>

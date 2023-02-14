@@ -29,23 +29,30 @@
       </head>
 <body onscroll="navBarChange()">
 
-    <a id="top"></a>
+    <!-- Top of page marker -->
+    <div id="top"></div> 
 
     <!-- Nav Bar
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="navbar" id="navBar">
 
-        <a href="#top" class="navbarItem">
-            <span>Home</span>
-        </a>
+        <div class="navbarLinksContainer">
 
-        <a href="site_builder.html" class="navbarItem">
-            <span>Site Builder</span>
-        </a>
+            <a href="#top" class="navbarLinks">
+                <span>Home</span>
+            </a>
+    
+            <a href="site_builder.html" class="navbarLinks">
+                <span>Site Builder</span>
+            </a>
+    
+            <a href="#top" class="navbarLinks" style="border-right: 0;">
+                <span>Account (sign in)</span> 
+            </a>
 
-        <a href="#top" class="navbarItem" style="border-right: 0;">
-            <span>About</span> 
-        </a>
+        </div>
+
+
     </div>
 
     <!-- About/Team

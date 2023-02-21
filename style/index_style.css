@@ -60,3 +60,25 @@
 
     border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
 }
+
+@media only screen and (max-width: 950px) {
+
+    .banner {
+
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .banner-about {
+
+        width: 75%;
+    }
+
+    .banner-team {
+
+        width: 100%;
+        border-top: rgba(0, 0, 0, 0.5) solid 1px;
+
+    }
+    
+}

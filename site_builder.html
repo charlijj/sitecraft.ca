@@ -47,20 +47,118 @@
         <a href="#top" class="navbarLinks" style="border-right: 0;">
             <span>Account (sign in)</span> 
         </a>
+
     </div>
 
     <!-- About/Team
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="banner">
+    <div class="main">
+        <div class="banner">
 
-        <h2>Build Your Site Today!</h2>
-
-    </div>
+            <h2>Build Your Site Today!</h2>
     
-    <div class="buildFormContainer">
-
-        <p>insert form here</p>
+        </div>
         
+        <div class="buildFormContainer">
+    
+            <form action="buildsite.php" method="post" id="buildForm">
+    
+                <p>First choose <strong>light</strong> or <strong>dark</strong> theme</p>
+                
+                <div class="themeRadioContainer">
+
+                    <label for="light">Light: </label>
+                    <input type="radio" name="theme" class="themeRadio" style="margin-right: 20%;" value="light" id="light" checked>
+                    <label for="dark">Dark:</label>
+                    <input type="radio" name="theme" class="themeRadio" value="dark" id="dark">
+
+                </div>
+
+                <div class="line"></div>
+                <p>Next choose your <strong>colors</strong></p>
+
+                <div class="selectContainer">
+
+                    <label for="primaryColor">Primary Color
+                        <input type="color" name="primaryColor" id="primaryColor" value="#b31a1a" class="colorSelect">
+                    </label>
+
+                    <label for="secondaryColor">Secondary Color 
+                        <input type="color" name="secondaryColor" id="secondaryColor" value="#1a4ab3" class="colorSelect">
+                    </label>
+
+                    <label for="treacheryColor">Treachery Color 
+                        <input type="color" name="treacheryColor" id="treacheryColor" value="#27b31a" class="colorSelect">
+                    </label>
+
+                    <label for="borderColor">Border Color 
+                        <input type="color" name="borderColor" id="borderColor" value="#761ab3" class="colorSelect">
+                    </label>
+                </div>
+
+                <div class="line"></div>
+                
+                <div class="selectContainer">
+                    <label for="siteName">Enter your website name: </label>
+                    <input type="text" name="siteName" class="textInput" placeholder="Joe's Company">
+                </div>
+
+                <div class="line"></div>
+
+                <p>Next select what <strong>elements</strong> you would like to have on your website</p>
+                <div class="selectContainer elementSelectContainer">
+
+                    <label for="element1">Select your first element: </label>
+                    <select name="element1" id="element1" class="elementSelect">
+                        <option value="slideShow">Slide Show</option>
+                        <option value="carousal">Carousal</option>
+                        <option value="gallery">Gallery</option>
+                        <option value="bigPhoto">Large Photo</option>
+                        <option value="paragraph">Paragraph</option>
+                    </select>
+
+                </div>
+                <div class="selectContainer elementSelectContainer">
+
+                    <label for="element2">Select your second element: </label>
+                    <select name="element2" id="element2" class="elementSelect">
+                        <option value="slideShow">Slide Show</option>
+                        <option value="carousal">Carousal</option>
+                        <option value="gallery">Gallery</option>
+                        <option value="bigPhoto">Large Photo</option>
+                        <option value="paragraph">Paragraph</option>
+                    </select>
+
+                </div>
+                <div class="selectContainer elementSelectContainer">
+
+                    <label for="element3">Select your third element: </label>
+                    <select name="element3" id="element3" class="elementSelect">
+                        <option value="slideShow">Slide Show</option>
+                        <option value="carousal">Carousal</option>
+                        <option value="gallery">Gallery</option>
+                        <option value="bigPhoto">Large Photo</option>
+                        <option value="paragraph">Paragraph</option>
+                    </select>
+
+                </div>
+                <div class="selectContainer elementSelectContainer">
+
+                    <label for="element4">Select your forth element: </label>
+                    <select name="element4" id="element4" class="elementSelect">
+                        <option value="slideShow">Slide Show</option>
+                        <option value="carousal">Carousal</option>
+                        <option value="gallery">Gallery</option>
+                        <option value="bigPhoto">Large Photo</option>
+                        <option value="paragraph">Paragraph</option>
+                    </select>
+
+                </div>
+
+                
+            </form>
+            
+        </div>
     </div>
 
     <footer>

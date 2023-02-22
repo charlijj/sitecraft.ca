@@ -105,6 +105,7 @@
 .elementSelectContainer {
 
     margin-bottom: 50px;
+    justify-content: left;
 }
 
 .elementSelect {

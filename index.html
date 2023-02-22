@@ -66,14 +66,23 @@
             </p>
         </div>
 
-        <div class="banner-team">
-            <h2>Meet the team!</h2>
+        <div class="banner-team" id="teamContainer">
 
-            <ul>
-                <li class="teamMember">Jasper Charlinski</li>
-                <li class="teamMember">Sebastien Van Den Bremt</li>
-                <li class="teamMember">Naman Batra</li>
-            </ul>
+            <div id="slideContent">
+                <h2>Meet the team!</h2>
+                <br>
+                <ul>
+                    <li class="teamMember">Jasper Charlinski</li>
+                    <li class="teamMember">Sebastien Van Den Bremt</li>
+                    <li class="teamMember">Naman Batra</li>
+                </ul>
+            </div>
+  
+            <div class="prevNextContainer">
+                <a class="prev" onclick="moveSlide(-1)">&#10095;</a>
+                <a class="next" onclick="moveSlide(1)">&#10094;</a>
+            </div>
+
         </div>
     </div>
 
@@ -92,6 +101,7 @@
     </footer>
 
     <script src="script/nav_bar_script.js"></script>
+    <script src="script/meet_team_slideshow.js"></script>
 
 </body>
 </html>

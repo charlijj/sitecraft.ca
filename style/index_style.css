@@ -122,9 +122,9 @@
 
 .templateCtn {
     display: flex;
-    flex-wrap: nowrap; /* remove wrapping */
+    flex-wrap: nowrap; 
     overflow-y: scroll; /* add scroll for carousel effect */
-    justify-content: flex-start; /* align images to the left */
+    justify-content: flex-start; 
     align-items: center;
     /* height: 200px; set a fixed height for carousel */
     padding: 20px;
@@ -133,9 +133,9 @@
 }
 
 .templateImg {
-    flex-shrink: 0; /* prevent images from shrinking */
-    /* max-height: 200px; 
-    margin-right: 10px; /* add some spacing between images */
+    flex-shrink: 0; 
+    /* max-height: 200px; */ 
+    margin-right: 10px; 
     box-sizing: border-box;
     display: block;
 }

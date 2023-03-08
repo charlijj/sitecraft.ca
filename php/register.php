@@ -2,31 +2,33 @@
     session_start();
     require ('dbinfo.inc');
     if (isset($_POST['register'])) {
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $password_hash = password_hash($password, PASSWORD_BCRYPT);
-
-        // $query =  
-        $query = $connection->prepare("SELECT * FROM users WHERE email=:email");
-        $query->bindParam("email", $email, PDO::PARAM_STR);
-        $query->execute();
-        if ($query->rowCount() > 0) {
-            echo '<p class="error">The email address is already registered!</p>';
-        }
-        if ($query->rowCount() == 0) {
-            $query = $connection->prepare("INSERT INTO users(username,password,email) VALUES (:username,:password_hash,:email)");
-            $query->bindParam("username", $username, PDO::PARAM_STR);
-            $query->bindParam("password_hash", $password_hash, PDO::PARAM_STR);
+        try{
+            $dbh = new PDO("mysql:host=$HOST;dbname=$DATABASE", $USER, $PASS");
+            $username = $_POST['username'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $password_hash = password_hash($password, PASSWORD_BCRYPT);
+            $fName = $_POST['fName'];
+            $lName = $_POST['lName'];
+            $Business = $_POST['Business'];
+            $query = $dbh->prepare("SELECT * FROM Members WHERE email=:email");
             $query->bindParam("email", $email, PDO::PARAM_STR);
-            $result = $query->execute();
-            if ($result) {
-                echo '<p class="success">Your registration was successful!</p>';
-            } else {
-                echo '<p class="error">Something went wrong!</p>';
+            $query->execute();
+            $query2 = "INSERT INTO Members(username, password, email, first_name, last_name, business_name) values ('$username', '$password_hash', '$email', '$first_name', '$last_name', '$Business')";
+            if ($query->rowCount() > 0) {
+                echo '<p class="error">The email address is already registered!</p>';
             }
-        }
-    }
+            if ($query->rowCount() == 0) {
+                if($dbh->exec($query2) !==false){
+                    echo "The album was inserted";
+                }else{
+                    echo "The album was not inserted";
+                }
+            }
+        }catch(PDOException $e){
+            echo "Connection failed: " . $e->getMessage();
+        }  
+    } 
 ?>
 
 <html lang="en">

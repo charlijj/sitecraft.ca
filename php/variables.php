@@ -1,9 +1,12 @@
 <?php
 
-# Variable to store user login status
-$IS_LOGGED_IN = false;
+$GLOBALS['IS_LOGGED_IN'] = false
 
-# Variable to style templates
-$primaryColor = $secondaryColor = $treacheryColor = $borderColor = $theme = $template = "";
+// $GLOBALS['template'] = '';
+// $GLOBALS['theme'] = '';
+// $GLOBALS['primaryColor'] = '';
+// $GLOBALS['secondaryColor'] = '';
+// $GLOBALS['treacheryColor'] = '';
+// $GLOBALS['borderColor'] = '';
 
 ?>

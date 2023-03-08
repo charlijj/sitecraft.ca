@@ -63,7 +63,18 @@
     
             <form action="php/buildsite.php" method="post" id="buildForm">
 
-                <p>Insert Template select here</p>
+                <div class="selectContainer">
+                    <label for="templateSelect">Choose what <strong>template</strong> you would like to work off of
+                        <select name="template" id="templateSelect" class="templateSelect">
+                            <option value="template1">template1</option>
+                            <option value="template2">template2</option>
+                            <option value="template3">template3</option>
+                            <option value="template4">template4</option>
+                            <option value="template5">template5</option>
+                        </select>
+                    </label>
+                </div>
+
                 <div class="line"></div>
     
                 <p>First choose <strong>light</strong> or <strong>dark</strong> theme</p>
@@ -108,7 +119,7 @@
 
                 <div class="line"></div>
 
-                <input type="submit" id="submitButton" value="Next Step">
+                <input type="submit" id="submitButton" class="submitButton" value="Next Step">
                 
             </form>
             

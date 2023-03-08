@@ -61,7 +61,21 @@
         
         <div class="buildFormContainer">
     
-            <form action="buildsite.php" method="post" id="buildForm">
+            <form action="php/buildsite.php" method="post" id="buildForm">
+
+                <div class="selectContainer">
+                    <label for="templateSelect">Choose what <strong>template</strong> you would like to work off of
+                        <select name="template" id="templateSelect" class="templateSelect">
+                            <option value="template1">template1</option>
+                            <option value="template2">template2</option>
+                            <option value="template3">template3</option>
+                            <option value="template4">template4</option>
+                            <option value="template5">template5</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="line"></div>
     
                 <p>First choose <strong>light</strong> or <strong>dark</strong> theme</p>
                 
@@ -105,72 +119,7 @@
 
                 <div class="line"></div>
 
-                <p>Next select what <strong>elements</strong> you would like to have on your website</p>
-                <div class="selectContainer elementSelectContainer">
-
-                    <label for="element1">Select your first element: </label>
-                    <select name="element1" id="element1" class="elementSelect">
-                        <option value="slideShow">Slide Show</option>
-                        <option value="carousal">Carousal</option>
-                        <option value="gallery">Gallery</option>
-                        <option value="bigPhoto">Large Photo</option>
-                        <option value="paragraph">Paragraph</option>
-                    </select>
-
-                </div>
-                <div class="selectContainer elementSelectContainer">
-
-                    <label for="element2">Select your second element: </label>
-                    <select name="element2" id="element2" class="elementSelect">
-                        <option value="carousal">Carousal</option>
-                        <option value="gallery">Gallery</option>
-                        <option value="bigPhoto">Large Photo</option>
-                        <option value="paragraph">Paragraph</option>
-                        <option value="slideShow">Slide Show</option>
-                    </select>
-
-                </div>
-                <div class="selectContainer elementSelectContainer">
-
-                    <label for="element3">Select your third element: </label>
-                    <select name="element3" id="element3" class="elementSelect">
-                        <option value="gallery">Gallery</option>
-                        <option value="slideShow">Slide Show</option>
-                        <option value="carousal">Carousal</option>
-                        <option value="bigPhoto">Large Photo</option>
-                        <option value="paragraph">Paragraph</option>
-                    </select>
-
-                </div>
-                <div class="selectContainer elementSelectContainer">
-
-                    <label for="element4">Select your forth element: </label>
-                    <select name="element4" id="element4" class="elementSelect">
-                        <option value="bigPhoto">Large Photo</option>
-                        <option value="slideShow">Slide Show</option>
-                        <option value="carousal">Carousal</option>
-                        <option value="gallery">Gallery</option>
-                        <option value="paragraph">Paragraph</option>
-                    </select>
-
-                </div>
-
-                <div class="selectContainer elementSelectContainer">
-
-                    <label for="element5">Select your fifth element: </label>
-                    <select name="element5" id="element5" class="elementSelect">
-                        <option value="paragraph">Paragraph</option>
-                        <option value="bigPhoto">Large Photo</option>
-                        <option value="slideShow">Slide Show</option>
-                        <option value="carousal">Carousal</option>
-                        <option value="gallery">Gallery</option>
-                    </select>
-
-                </div>
-
-                <div class="line"></div>
-
-                <input type="submit" id="submitButton" value="Next Step">
+                <input type="submit" id="submitButton" class="submitButton" value="Next Step">
                 
             </form>
             

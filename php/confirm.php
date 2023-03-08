@@ -54,36 +54,15 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="main">
         
-        <h1 class="headerTxt">Confirm your selections</h1>
+        <h1 class="headerTxt">Your selections</h1>
         <div class="line" style></div>
 
         <div class="buildFormConfirm">
 
 
             <?php
-
                 include_once("variables.php");
-
-                if (!$GLOBALS['IS_LOGGED_IN']) # check if user is logged in 
-                {
-                    echo "<h1>USER IS NOT LOGGED IN</h1>";
-                }
-                else
-                {
-                    echo "<h1>USER IS LOGGED IN</h1>";
-                }
-
-                if ($_SERVER["REQUEST_METHOD"] == "POST") // If form method is using post, collect input from form
-                {
-                    $GLOBALS['theme'] = $_POST["theme"];
-                    $GLOBALS['template'] = $_POST["template"];
-
-                    $GLOBALS['primaryColor'] = $_POST["primaryColor"];
-                    $GLOBALS['secondaryColor'] = $_POST["secondaryColor"];
-                    $GLOBALS['treacheryColor'] = $_POST["treacheryColor"];
-                    $GLOBALS['borderColor'] = $_POST["borderColor"];
-                }
-
+                
                 $theme = $GLOBALS['theme'];
                 $template = $GLOBALS['template'];
                 $primaryColor = $GLOBALS['primaryColor'];
@@ -98,13 +77,9 @@
                 echo "<h3>Secondary Color: </h3><div class=\"colorDisplay\" style=\"background-color: $secondaryColor;\"></div>";
                 echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
                 echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
-
             ?>
         </div>
 
-        <form action="confirm.php" method="post" id="confirmForm">
-            <input type="submit" id="submitButton" class="submitButton" value="Confirm">
-        </form>
     </div>
 
     <footer>

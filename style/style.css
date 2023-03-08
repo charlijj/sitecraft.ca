@@ -63,6 +63,13 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.headerTxt {
+
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+}
+
 
 footer {
 

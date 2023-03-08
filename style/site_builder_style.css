@@ -24,7 +24,7 @@
 
 /* ----------------------- FORM STYLE ----------------------- */
 
-#buildForm {
+#buildForm, #confirmForm {
 
     display: flex;
     align-items: center;
@@ -88,6 +88,15 @@
     transition: border-width ease 0.2s;
 }
 
+.colorDisplay {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
 .colorSelect:hover {
 
     border-width: 3px;
@@ -102,28 +111,22 @@
     margin-left: 20px;
 }
 
-.elementSelectContainer {
-
-    margin-bottom: 50px;
-    justify-content: left;
-}
-
-.elementSelect {
+.templateSelect {
 
     width: 50%;
     height: 40px;
     font-size: 20px;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-top: 20px;
     transition: background-color ease 0.2s;
 }
 
-.elementSelect:hover {
+.templateSelect:hover {
 
     background-color: rgb(200, 200, 200);
 }
 
-#submitButton {
+.submitButton {
 
     width: 50%;
     height: 150px;
@@ -138,11 +141,25 @@
     transition: background-color ease 0.2s, width ease 0.4s, height ease 0.4s;
 }
 
-#submitButton:hover {
+.submitButton:hover {
 
     background-color: rgba(255, 255, 255, 0.7);
     width: 52%;
     height: 155px;
+}
+
+.buildFormConfirm {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+}
+
+.buildFormConfirm h3 {
+
+    margin-top: 50px;
 }
 
 /* ---------------- Mobile Adjustments ---------------- */

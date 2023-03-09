@@ -20,9 +20,9 @@
             }
             if ($query->rowCount() == 0) {
                 if($dbh->exec($query2) !==false){
-                    echo "The album was inserted";
+                    echo "The User was Created";
                 }else{
-                    echo "The album was not inserted";
+                    echo "The User was Not Created";
                 }
             }
         }catch(PDOException $e){

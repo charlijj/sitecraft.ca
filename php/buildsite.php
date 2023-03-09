@@ -82,8 +82,10 @@
                     $secondaryColor = $_POST["secondaryColor"];
                     $treacheryColor = $_POST["treacheryColor"];
                     $borderColor = $_POST["borderColor"];
+                    $siteName = $_POST["siteName"];
                 }
 
+                echo "<h3>Website Name: </h3>$siteName";
                 echo "<h3>Template: </h3>$template";
                 echo "<h3>Theme: </h3>$theme";
 
@@ -92,7 +94,7 @@
                 echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
                 echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
 
-                file_put_contents("website_variables.php", "<?php\n\$template='$template';\n\$theme='$theme';\n\$primaryColor='$primaryColor';\n\$secondaryColor='$secondaryColor';\n\$treacheryColor='$treacheryColor';\n\$borderColor='$borderColor';\n?>");
+                file_put_contents("website_variables.php", "<?php\n$siteName='$siteName';\n\$template='$template';\n\$theme='$theme';\n\$primaryColor='$primaryColor';\n\$secondaryColor='$secondaryColor';\n\$treacheryColor='$treacheryColor';\n\$borderColor='$borderColor';\n?>");
             ?>
         </div>
 

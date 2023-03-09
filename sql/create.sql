@@ -2,7 +2,7 @@
 
 CREATE TABLE Members (
     MemberID int(10) unsigned NOT NULL AUTO_INCREMENT,
-    username varchar(25) NOT NULL,
+    username varchar(25) NOT NULL UNIQUE,
     password varchar(255) NOT NULL,
     email varchar(100) NOT NULL,
     first_name varchar(100) NOT NULL,

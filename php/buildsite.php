@@ -75,21 +75,14 @@
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") // If form method is using post, collect input from form
                 {
-                    $GLOBALS['theme'] = $_POST["theme"];
-                    $GLOBALS['template'] = $_POST["template"];
+                    $theme = $_POST["theme"];
+                    $template = $_POST["template"];
 
-                    $GLOBALS['primaryColor'] = $_POST["primaryColor"];
-                    $GLOBALS['secondaryColor'] = $_POST["secondaryColor"];
-                    $GLOBALS['treacheryColor'] = $_POST["treacheryColor"];
-                    $GLOBALS['borderColor'] = $_POST["borderColor"];
+                    $primaryColor = $_POST["primaryColor"];
+                    $secondaryColor = $_POST["secondaryColor"];
+                    $treacheryColor = $_POST["treacheryColor"];
+                    $borderColor = $_POST["borderColor"];
                 }
-
-                $theme = $GLOBALS['theme'];
-                $template = $GLOBALS['template'];
-                $primaryColor = $GLOBALS['primaryColor'];
-                $secondaryColor = $GLOBALS['secondaryColor'];
-                $treacheryColor = $GLOBALS['treacheryColor'];
-                $borderColor = $GLOBALS['borderColor'];
 
                 echo "<h3>Template: </h3>$template";
                 echo "<h3>Theme: </h3>$theme";
@@ -99,6 +92,7 @@
                 echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
                 echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
 
+                file_put_contents("website_variables.php", "<?php\n\$template='$template';\n\$theme='$theme';\n\$primaryColor='$primaryColor';\n\$secondaryColor='$secondaryColor';\n\$treacheryColor='$treacheryColor';\n\$borderColor='$borderColor';\n?>");
             ?>
         </div>
 

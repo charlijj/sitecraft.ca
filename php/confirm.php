@@ -61,15 +61,8 @@
 
 
             <?php
-                include_once("variables.php");
+                include_once("website_variables.php");
                 
-                $theme = $GLOBALS['theme'];
-                $template = $GLOBALS['template'];
-                $primaryColor = $GLOBALS['primaryColor'];
-                $secondaryColor = $GLOBALS['secondaryColor'];
-                $treacheryColor = $GLOBALS['treacheryColor'];
-                $borderColor = $GLOBALS['borderColor'];
-
                 echo "<h3>Template: </h3>$template";
                 echo "<h3>Theme: </h3>$theme";
 
@@ -77,6 +70,7 @@
                 echo "<h3>Secondary Color: </h3><div class=\"colorDisplay\" style=\"background-color: $secondaryColor;\"></div>";
                 echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
                 echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
+
             ?>
         </div>
 

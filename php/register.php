@@ -3,7 +3,7 @@
     require ('dbinfo.inc');
     if (isset($_POST['register'])) {
         try{
-            $dbh = new PDO("mysql:host=$HOST;dbname=$DATABASE", $USER, $PASS");
+            $dbh = new PDO("mysql:host=$HOST;dbname=$DATABASE", $USER, $PASS);
             $username = $_POST['username'];
             $email = $_POST['email'];
             $password = $_POST['password'];
@@ -14,7 +14,7 @@
             $query = $dbh->prepare("SELECT * FROM Members WHERE email=:email");
             $query->bindParam("email", $email, PDO::PARAM_STR);
             $query->execute();
-            $query2 = "INSERT INTO Members(username, password, email, first_name, last_name, business_name) values ('$username', '$password_hash', '$email', '$first_name', '$last_name', '$Business')";
+            $query2 = "INSERT INTO Members(username, password, email, first_name, last_name, business_name) values ('$username', '$password_hash', '$email', '$fName', '$lName', '$Business')";
             if ($query->rowCount() > 0) {
                 echo '<p class="error">The email address is already registered!</p>';
             }

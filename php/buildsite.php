@@ -43,9 +43,10 @@
         <a href="../site_builder.html" class="navbarLinks">
             <span>Site Builder</span>
         </a>
-
-        <a href="#top" class="navbarLinks" style="border-right: 0;">
-            <span>Account (sign in)</span> 
+        
+        
+        <a href="login_model.php" class="navbarLinks" data-toggle="modal" data-target="#myModal style="border-right: 0;">
+            <span>Accounts (sign in)</span> 
         </a>
 
     </div>

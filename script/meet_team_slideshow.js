@@ -2,7 +2,7 @@ const slideContent = document.getElementById("slideContent");
 
 const JasperAbout = "<h2>Jasper!</h2><p>some about stuff</p>";
 
-const SebastienAbout = "<h2>Sebastien!</h2><p>some about stuff</p>";
+const SebastienAbout = "<h2>Sebastien!</h2><p>A Computer Science student focused on CyberSecurity and Script Automation. Has spent many years as a Craft Brewer and an Organic Farmer, and is now ready to join the immersive world of Software. On his spare time he enjoys skateboarding, snowboarding, travel and hacking exercises.</p>";
 
 const NamanAbout = "<h2>Naman!</h2><p>some about stuff</p>";
 

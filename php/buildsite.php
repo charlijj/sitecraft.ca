@@ -45,7 +45,7 @@
         </a>
         
         
-        <a href="login_model.php" class="navbarLinks" data-toggle="modal" data-target="#myModal style="border-right: 0;">
+        <a href="login_model.php" class="navbarLinks" style="border-right: 0;">
             <span>Accounts (sign in)</span> 
         </a>
 

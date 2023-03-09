@@ -12,3 +12,20 @@ CREATE TABLE Members (
     PRIMARY KEY (MemberID),
     UNIQUE KEY username (username)
 ); 
+
+CREATE TABLE Businesses 
+(
+businessID int(10) NOT NULL AUTO_INCREMENT, 
+name varchar(25) NOT NULL, 
+memberID int(10) references Members, 
+websiteID int(10) references Websites 
+);
+
+CREATE TABLE Websites 
+(
+websiteID int(10) NOT NULL AUTO_INCREMENT,
+URL varchar(500) NOT NULL, 
+memberID int(10) references Members, 
+businessID references Businesses
+
+);

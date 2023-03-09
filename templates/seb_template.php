@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+require ('../php/website_variables.php');
+?>
+<!-- 
+$template='template2';
+$theme='light';
+$primaryColor='#b31a1a';
+$secondaryColor='#1a4ab3';
+$treacheryColor='#27b31a';
+$borderColor='#761ab3'; 
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +18,7 @@
     <title>Web Site Template</title>
     <style>
         body {
-            background-color: whitesmoke;
+            background-color: <?php echo('$primaryColor') ?>;
         }
 
         .myDiv {
@@ -25,9 +35,9 @@
 
             width: 100%;
             /* background color to be the same as body */
-            background: orange;
+            background: <?php echo('$secondaryColor') ?>;
 
-            border: 3px outset black;
+            border: 3px outset <?php echo('$borderColor') ?>;
             color: black;
             font-size: 20px;
         }
@@ -106,7 +116,7 @@
 		.button {
 			display: inline-block;
 			padding: 10px 20px;
-			border: 2px solid #000000;
+			border: 2px solid <?php echo('$borderColor') ?>;
 			border-radius: 4px;
 			margin: 10px;
 			font-size: 18px;
@@ -128,7 +138,7 @@
 			text-align: justify;
 			background-color: #f7f7f7;
             color: #666666;
-			border: 1px solid #ddd;
+			border: 1px solid <?php echo('$borderColor') ?>;
             font-family: 'M PLUS 1p', sans-serif;
 		}
         .footer {

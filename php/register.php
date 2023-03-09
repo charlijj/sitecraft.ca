@@ -19,10 +19,12 @@
                 echo '<p class="error">The email address is already registered!</p>';
             }
             if ($query->rowCount() == 0) {
-                if($dbh->exec($query2) !==false){
-                    echo "The User was Created";
+                if($dbh->exec($query2)){
+                    echo "<script>alert(\"Account Created\")</script>";
+                    echo "<script>window.location=/index.html</script>";
+
                 }else{
-                    echo "The User was Not Created";
+                    echo "<script>alert(\"Account Not Created, Try Again\")</script>";
                 }
             }
         }catch(PDOException $e){

@@ -1,5 +1,5 @@
 <?php
-$siteName='My Company';
+$siteName='ggggggggg';
 $template='template1';
 $theme='light';
 $primaryColor='#b31a1a';

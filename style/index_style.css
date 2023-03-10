@@ -28,7 +28,6 @@
     font-size: 18px;
 }
 
-
 .banner-team {
 
     position: relative;
@@ -41,14 +40,14 @@
     height: 100%;
 }
 
-#slideContent {
+.slideContent {
 
     position: absolute;
     text-align: center;
     transition: opacity ease 0.3s;
 }
 
-#slideContent ul {
+.slideContent ul {
 
     text-align: left;
 }
@@ -71,7 +70,6 @@
     
     z-index: 1;
 }
-
 
 .prev, .next {
 
@@ -106,43 +104,43 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.showcase {
+.templateContainer {
 
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
-
     width: 100%;
-    /* height: 450px;  */
-    margin-top: 50px;
-
-    border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
+    height: 450px;
 }
 
-.templateCtn {
-    display: flex;
-    flex-wrap: nowrap; 
-    overflow-y: scroll; /* add scroll for carousel effect */
-    justify-content: flex-start; 
-    align-items: center;
-    /* height: 200px; set a fixed height for carousel */
-    padding: 20px;
-    box-sizing: border-box;
+.templateShowcase {
 
+    width: 50%;
+    height: 90%;
+    margin: 20px 0;
+    background-size: cover;
+    background-position: center;
+    background-color: aliceblue;
 }
 
-.templateImg {
-    flex-shrink: 0; 
-    /* max-height: 200px; */ 
-    margin-right: 10px; 
-    box-sizing: border-box;
-    display: block;
+#sebTemplate {
+
+    background-image: url(../img/template1.png);
 }
-.templateSizing {
-    height: 300px;
-    border: 1px solid black;
+
+#jasperTemplate {
+
+    background-image: url(../img/hammer1.jpg);
 }
+#namanTemplate {
+
+    background-image: url(../img/hammer2.jpg);
+}
+
+
+
 
 /* ---------------- Mobile Adjustments ---------------- */
 

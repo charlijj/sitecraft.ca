@@ -1,48 +1,45 @@
-const slideContent = document.getElementById("slideContent");
-
+const slideTeamContent = document.getElementById("teamSlideContent");
 const JasperAbout = "<h2>Jasper!</h2><p>some about stuff</p>";
-
 const SebastienAbout = "<h2>Sebastien!</h2><p>A Computer Science student focused on CyberSecurity and Script Automation. Has spent many years as a Craft Brewer and an Organic Farmer, and is now ready to join the immersive world of Software. On his spare time he enjoys skateboarding, snowboarding, travel and hacking exercises.</p>";
-
 const NamanAbout = "<h2>Naman!</h2><p>some about stuff</p>";
 
-let slideIndex = 0;
+let teamSlideIndex = 0;
 
-function moveSlide(increment) 
+function moveTeamSlide(increment) 
 {
     const numSlides = 4;
 
-    slideIndex += increment;
+    teamSlideIndex += increment;
 
-    if (slideIndex < 0)
+    if (teamSlideIndex < 0)
     {
-        slideIndex = numSlides - 1;
+        teamSlideIndex = numSlides - 1;
     }
 
-    if (slideIndex > numSlides - 1)
+    if (teamSlideIndex > numSlides - 1)
     {
-        slideIndex = 0;
+        teamSlideIndex = 0;
     }
 
-    slideContent.style.opacity = 0;
+    slideTeamContent.style.opacity = 0;
 
     setTimeout(()=>{
 
-        switch (slideIndex)
+        switch (teamSlideIndex)
         {
             case 0:
-                slideContent.innerHTML = "<h2>Meet the team!</h2><br><ul><li class=\"teamMember\">Jasper Charlinski</li><li class=\"teamMember\">Sebastien Van Den Bremt</li><li class=\"teamMember\">Naman Batra</li></ul>";
+                slideTeamContent.innerHTML = "<h2>Meet the team!</h2><br><ul><li class=\"teamMember\">Jasper Charlinski</li><li class=\"teamMember\">Sebastien Van Den Bremt</li><li class=\"teamMember\">Naman Batra</li></ul>";
                 break;
             case 1:
-                slideContent.innerHTML = NamanAbout;
+                slideTeamContent.innerHTML = NamanAbout;
                 break;
             case 2:
-                slideContent.innerHTML = SebastienAbout;
+                slideTeamContent.innerHTML = SebastienAbout;
                 break;
             case 3:
-                slideContent.innerHTML = JasperAbout;
+                slideTeamContent.innerHTML = JasperAbout;
                 break;
         }
-        slideContent.style.opacity = 1;
+        slideTeamContent.style.opacity = 1;
     }, 200);
 }

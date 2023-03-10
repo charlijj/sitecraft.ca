@@ -76,7 +76,7 @@
 
         <div class="banner-team" id="teamContainer">
 
-            <div id="slideContent">
+            <div id="teamSlideContent" class="slideContent">
                 <h2>Meet the team!</h2>
                 <br>
                 <ul>
@@ -87,8 +87,8 @@
             </div>
   
             <div class="prevNextContainer">
-                <a class="prev" onclick="moveSlide(-1)">&#10095;</a>
-                <a class="next" onclick="moveSlide(1)">&#10094;</a>
+                <a class="prev" onclick="moveTeamSlide(-1)">&#10095;</a>
+                <a class="next" onclick="moveTeamSlide(1)">&#10094;</a>
             </div>
 
         </div>
@@ -96,16 +96,14 @@
 
     <!-- About/Team
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="showcase">
 
+    <div class="templateContainer">
         <h2>Explore our templates</h2>
 
-        <p>Insert some templates or examples here (slideshow?)</p>
-        <div class="templateCtn">
-            <div class="templateImg">
-                <a a href="seb_template.html"><img src="img/template1.png" alt="Template for Hammers" class="templateSizing" > </a>
-            </div>
-
+        <div id="templateSlideContent" class="slideContent templateShowcase"></div>
+        <div class="prevNextContainer">
+            <a class="prev" onclick="moveTemplateSlide(-1)">&#10095;</a>
+            <a class="next" onclick="moveTemplateSlide(1)">&#10094;</a>
         </div>
     </div>
     
@@ -116,6 +114,7 @@
 
     <script src="script/nav_bar_script.js"></script>
     <script src="script/meet_team_slideshow.js"></script>
+    <script src="script/template_slideshow.js"></script>
 
 </body>
 </html>

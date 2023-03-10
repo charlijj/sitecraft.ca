@@ -19,13 +19,12 @@
     flex-direction: column;
 
     width: 100%;
-    height: 2000px;
+    height: 1500px;
 }
 
 /* ----------------------- FORM STYLE ----------------------- */
 
-#buildForm, #confirmForm {
-
+.buildFormContainer {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -33,14 +32,49 @@
 
     width: 100%;
     height: 100%;
-    margin-top: 25px;
+}
 
+.buildFormContainer form {
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+
+    width: 60%;
+    height: 100%;
+    margin-top: 25px;
+    text-align: center;
     font-size: 18px;
 }
 
-#buildForm p {
+.buildFormContainer form p {
 
     margin-bottom: 50px;
+}
+
+.buildFormContainer form textarea {
+
+    width: 99%;
+    height: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    resize: none;
+    transition: width ease 0.2s, height ease 0.2s;
+}
+
+.buildFormContainer form textarea:hover {
+
+
+    height: 280px
+}
+
+.buildFormContainer form .textAreaLabel {
+
+    width: 100%;
+    margin-bottom: 55px;
 }
 
 .themeRadioContainer {

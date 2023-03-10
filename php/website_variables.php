@@ -1,5 +1,6 @@
 <?php
-$template='template2';
+$siteName='My Company';
+$template='template1';
 $theme='light';
 $primaryColor='#b31a1a';
 $secondaryColor='#1a4ab3';

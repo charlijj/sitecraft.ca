@@ -48,30 +48,29 @@
         <a href="login_model.php" class="navbarLinks" style="border-right: 0;">
             <span>Accounts (sign in)</span> 
         </a>
-
     </div>
 
     <!-- About/Team
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="main">
+    <div class="main" style="height: 2000px;">
         
         <h1 class="headerTxt">Confirm your selections</h1>
         <div class="line" style></div>
 
         <div class="buildFormConfirm">
 
-
             <?php
-
-                include_once("variables.php");
 
                 if (!$GLOBALS['IS_LOGGED_IN']) # check if user is logged in 
                 {
-                    echo "<h1>USER IS NOT LOGGED IN</h1>";
-                }
-                else
-                {
-                    echo "<h1>USER IS LOGGED IN</h1>";
+                    // echo"
+                    //     <script>
+                    //     alert(\"User is not logged in\");
+                    //     window.location = \"../site_builder.html\";
+                    //     </script>
+                    //     ";
+
+                    echo "<h1>USER NOT LOGGED IN</h1>";
                 }
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") // If form method is using post, collect input from form
@@ -95,13 +94,12 @@
                 echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
                 echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
 
-                file_put_contents("website_variables.php", "<?php\n$siteName='$siteName';\n\$template='$template';\n\$theme='$theme';\n\$primaryColor='$primaryColor';\n\$secondaryColor='$secondaryColor';\n\$treacheryColor='$treacheryColor';\n\$borderColor='$borderColor';\n?>");
+                file_put_contents("website_variables.php", "<?php\n\$siteName='$siteName';\n\$template='$template';\n\$theme='$theme';\n\$primaryColor='$primaryColor';\n\$secondaryColor='$secondaryColor';\n\$treacheryColor='$treacheryColor';\n\$borderColor='$borderColor';\n?>");
             ?>
         </div>
 
-        <form action="confirm.php" method="post" id="confirmForm">
-            <input type="submit" id="submitButton" class="submitButton" value="Confirm">
-        </form>
+        <input type="button" id="submitButton" class="submitButton" value="Confirm" onClick="confirm()">
+
     </div>
 
     <footer>
@@ -109,5 +107,8 @@
     </footer>
 
     <script src="../script/nav_bar_script.js"></script>
+    <script>
+        function confirm() {window.location = "../site_builder_content.html"}
+    </script>
 </body>
 </html>

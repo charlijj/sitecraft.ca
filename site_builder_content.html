@@ -19,8 +19,8 @@
     
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/site_builder_style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/site_builder_style.css">
     
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,11 +36,11 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="navbar" id="navBar">
 
-        <a href="../index.html" class="navbarLinks">
+        <a href="index.html" class="navbarLinks">
             <span>Home</span>
         </a>
 
-        <a href="../site_builder.html" class="navbarLinks">
+        <a href="site_builder.html" class="navbarLinks">
             <span>Site Builder</span>
         </a>
 
@@ -52,34 +52,45 @@
 
     <!-- About/Team
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="main">
-        
-        <h1 class="headerTxt">Your selections</h1>
-        <div class="line" style></div>
-
-        <div class="buildFormConfirm">
-
-
-            <?php
-                include_once("website_variables.php");
-                
-                echo "<h3>Template: </h3>$template";
-                echo "<h3>Theme: </h3>$theme";
-
-                echo "<h3>Primary Color: </h3><div class=\"colorDisplay\" style=\"background-color: $primaryColor;\"></div>";
-                echo "<h3>Secondary Color: </h3><div class=\"colorDisplay\" style=\"background-color: $secondaryColor;\"></div>";
-                echo "<h3>Treachery Color: </h3><div class=\"colorDisplay\" style=\"background-color: $treacheryColor;\"></div>";
-                echo "<h3>Border Color: </h3><div class=\"colorDisplay\" style=\"background-color: $borderColor;\"></div>";
-
-            ?>
+    <div class="main" style="height: 2000px;">
+        <div class="banner">
+            <h2>Now create the content for your website</h2>
         </div>
+        
+        <div class="buildFormContainer">
+    
+            <form action="php/confirm_content.php" method="post" id="buildForm">
+                
+                <label for="about" class="textAreaLabel">Enter the about content for your website
+                    <textarea name="about" id="about"></textarea>
+                </label>
 
+                <label for="services" class="textAreaLabel">Enter the services content for your website
+                    <textarea name="services" id="services"></textarea>
+                </label>
+
+                <label for="exata1" class="textAreaLabel">Enter extra content for your website
+                    <textarea name="exata1" id="exata1"></textarea>
+                </label>
+
+                <label for="exata2" class="textAreaLabel">Enter more extra content for your website
+                    <textarea name="exata2" id="exata2"></textarea>
+                </label>
+
+                <div class="line"></div>
+
+                <input type="submit" id="submitButton" class="submitButton" value="Next Step">
+                
+            </form>
+            
+        </div>
     </div>
 
     <footer>
         Jasper Charlinski, Sebastien Van Den Bremt, Naman Batra Febuary 10th, 2023 &copy;
     </footer>
 
-    <script src="../script/nav_bar_script.js"></script>
+    <script src="script/nav_bar_script.js"></script>
+
 </body>
 </html>

@@ -18,7 +18,7 @@ $borderColor='#761ab3';
     <title>Web Site Template</title>
     <style>
         body {
-            background-color: <?php echo('$primaryColor') ?>;
+            background-color: <?php echo($primaryColor) ?>;
         }
 
         .myDiv {
@@ -35,9 +35,9 @@ $borderColor='#761ab3';
 
             width: 100%;
             /* background color to be the same as body */
-            background: <?php echo('$secondaryColor') ?>;
+            background: <?php echo($secondaryColor) ?>; 
 
-            border: 3px outset <?php echo('$borderColor') ?>;
+            border: 3px outset <?php echo($borderColor) ?>;
             color: black;
             font-size: 20px;
         }
@@ -74,7 +74,7 @@ $borderColor='#761ab3';
 			height: auto;
 		}
         .companyName {
-			background-color: #F5F5F5;
+			background-color: <?php echo($treacheryColor) ?>;
 			padding: 20px;
 			box-sizing: border-box;
 			text-align: center;
@@ -116,7 +116,7 @@ $borderColor='#761ab3';
 		.button {
 			display: inline-block;
 			padding: 10px 20px;
-			border: 2px solid <?php echo('$borderColor') ?>;
+			border: 2px solid <?php echo($borderColor) ?>;
 			border-radius: 4px;
 			margin: 10px;
 			font-size: 18px;
@@ -136,9 +136,9 @@ $borderColor='#761ab3';
 			font-size: 18px;
 			line-height: 1.5;
 			text-align: justify;
-			background-color: #f7f7f7;
+			background-color: <?php echo($treacheryColor) ?>; ;
             color: #666666;
-			border: 1px solid <?php echo('$borderColor') ?>;
+			border: 1px solid <?php echo($borderColor) ?>;
             font-family: 'M PLUS 1p', sans-serif;
 		}
         .footer {
@@ -171,18 +171,18 @@ $borderColor='#761ab3';
         </div>
     </div>
     <div class="companyName">
-		<h1>鎚職人</h1>
-		<p>Japanese Artisan Hammer Company</p>
+		<h1>Company Name</h1>
+		<p>Company Slogan</p>
 	</div>
     <div class="container">
 		<div class="image">
-			<img src="../img/hammer1.jpg" alt="Japanese long hammer">
+			<img src="../img/Insert-Photo-Here.jpg" alt="Japanese long hammer">
 		</div>
 		<div class="image">
-			<img src="../img/hammer2.jpg" alt="Japanese short copper hammer">
+			<img src="../img/Insert-Photo-Here.jpg"" alt="Japanese short copper hammer">
 		</div>
 		<div class="image">
-			<img src="../img/hammer3.jpg" alt="Japanese short hammer">
+			<img src="../img/Insert-Photo-Here.jpg"" alt="Japanese short hammer">
 		</div>
 	</div>
     <div class="options">
@@ -197,9 +197,7 @@ $borderColor='#761ab3';
 	</div>
 
     <div class="description">
-		We are a Japanese artisan hammer company that specializes in handcrafted, high-quality hammers for the discerning craftsman. 
-        With a rich history dating back over a century, we pride ourselves on producing traditional Japanese hammers 
-        that are as beautiful as they are functional.
+		Insert a descriptive text here that will showcase the intent of the company and website.
 	</div>
     <footer class="footer">
 		<p>&copy; 2023 Japanese Artisan Hammer Company. All rights reserved.</p>

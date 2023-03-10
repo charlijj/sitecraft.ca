@@ -63,8 +63,7 @@ body {
     height: 100%;
     width: 33%;
     border-right: 1px solid rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    color: white;
+    text-dec
     font-size: 24px;
     font-weight: 400;
     transition: background-color ease 0.2s;

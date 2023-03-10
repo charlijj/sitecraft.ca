@@ -40,23 +40,37 @@ body {
     height: 100%;
 }
 
-.navbarLinks {
-
+.navbarLinks{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     height: 100%;
     width: 33%;
-
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: white;
     font-size: 24px;
     font-weight: 400;
-
     transition: background-color ease 0.2s;
+    /* new property for button elements */
+    
 }
+
+.button-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 33%;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    transition: background-color ease 0.2s;
+    /* new property for button elements */
+    display: inline-block;
+  }
 
 .navbarLinks:hover {
 

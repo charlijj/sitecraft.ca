@@ -52,11 +52,16 @@
             <a href="site_builder.html" class="navbarLinks">
                 <span>Site Builder</span>
             </a>
+
             
-            <a href="" class="navbarLinks" data-toggle="modal" data-target="#myModal" style="border-right: 0;">
-            <span>sign in</span> 
-        </a>
-            <div id="includeHtml"></div>
+                <button id="signin" class = "button-like" style="border-right: 0;">
+                    <span>sign in</span> 
+                </button>
+        
+            
+
+            
+        <div id="includedContent"></div>
 
         </div>
 
@@ -115,6 +120,13 @@
     <script src="script/nav_bar_script.js"></script>
     <script src="script/meet_team_slideshow.js"></script>
     <script src="script/template_slideshow.js"></script>
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("login_model.html"); 
+    });
+    </script> 
+
 
 </body>
 </html>

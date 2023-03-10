@@ -1,8 +1,17 @@
 const slideTemplateContent = document.getElementById("templateSlideContent");
 
-const sebTemplate = `<a href="templates/seb_template.html" class="teamSlideContent" id="sebTemplate">seb</a>`
-const jasperTemplate = `<a href="templates/seb_template.html" class="teamSlideContent" id="jasperTemplate">jasper</a>`
-const namanTemplate = `<a href="templates/seb_template.html" class="teamSlideContent" id="namanTemplate">nanma</a>`
+const sebTemplate = `
+    <h2>Template 1</h2>
+    <a href="templates/seb_template.html" class="templateLink" id="sebTemplate"></a>
+`;
+const jasperTemplate = `
+    <h2>Template 2 (Coming Soon)</h2>
+    <a href="templates/seb_template.html" class="templateLink" id="jasperTemplate"></a>
+`;
+const namanTemplate = `
+    <h2>Template 3 (Coming Soon)</h2>
+    <a href="templates/seb_template.html" class="templateLink" id="namanTemplate"></a>
+`;
 
 let templateSlideIndex = 0;
 
@@ -22,9 +31,6 @@ function moveTemplateSlide(increment)
         templateSlideIndex = 0;
     }
 
-
-    slideTemplateContent.style.opacity = 0;
-
     setTimeout(()=>{
 
         switch (templateSlideIndex)
@@ -39,6 +45,5 @@ function moveTemplateSlide(increment)
                 slideTemplateContent.innerHTML = namanTemplate;
                 break;
         }
-        slideTemplateContent.style.opacity = 1;
     }, 200);
 }

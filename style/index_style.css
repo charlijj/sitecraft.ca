@@ -112,18 +112,27 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 450px;
+    height: 650px;
 }
 
 .templateShowcase {
 
+    position: absolute;
+    text-align: center;
     width: 50%;
-    height: 90%;
-    margin: 20px 0;
+    height: 60%;
+    top: 10%;
+}
+
+.templateLink {
+
+    display: block;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    background-color: aliceblue;
-}
+} 
+
 
 #sebTemplate {
 
@@ -132,15 +141,13 @@
 
 #jasperTemplate {
 
-    background-image: url(../img/hammer1.jpg);
+    background-color: blue;
 }
 #namanTemplate {
 
-    background-image: url(../img/hammer2.jpg);
+    background-color: red;
+
 }
-
-
-
 
 /* ---------------- Mobile Adjustments ---------------- */
 
